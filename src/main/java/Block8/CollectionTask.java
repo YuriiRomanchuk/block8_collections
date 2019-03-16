@@ -7,9 +7,9 @@ import java.util.TreeMap;
 public class CollectionTask {
 
 
-    public Map<Integer, Integer> recieveNumberOfEntry(Integer... ints) {
+    public Map<Integer, Integer> receiveNumberOfEntry(Integer... ints) {
 
-        final Map<Integer, Integer> numbers = new TreeMap<Integer, Integer>();
+        final Map<Integer, Integer> numbers = new TreeMap<>();
 
         Arrays.asList(ints).forEach(n->numbers.put(n, numbers.getOrDefault(n, 0)+1));
 
