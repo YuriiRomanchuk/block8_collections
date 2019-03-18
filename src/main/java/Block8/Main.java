@@ -2,6 +2,8 @@ package Block8;
 
 import Block8.my_array_list.MyArrayList;
 import Block8.my_array_list.MyList;
+import Block8.my_hash_map.MyHashMap;
+import Block8.my_hash_map.MyMap;
 import Block8.my_linked_list.Linked;
 import Block8.my_linked_list.MyLinkedList;
 
@@ -43,6 +45,26 @@ public class Main {
         for (String string : strings) {
             System.out.println(string);
         }
+
+        System.out.println("//---------------------------------");
+
+
+        MyMap<String, String> stringsMap = new MyHashMap<>();
+        stringsMap.insert("1", "1");
+        stringsMap.insert("2", "2");
+        stringsMap.insert("3", "3");
+        stringsMap.insert("4", "4");
+        stringsMap.insert("5", "5");
+        stringsMap.insert("6", "6");
+
+        stringsMap.delete("4");
+
+
+        for (String s : stringsMap) {
+            System.out.println(s);
+        }
+
+
 
 
     }
